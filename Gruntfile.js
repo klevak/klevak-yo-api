@@ -229,7 +229,7 @@ grunt.registerTask('buildApiBundle', 'Build zip without importing it to Edge', [
     'importApiBundle', 'installNpmRevision', 'deployApiRevision', 'executeTests', /*'shell:run_jmeter_tests',*/ 'notify:ApiDeployed']);
 
   //set to DEPLOY_IMPORT_BUMP_SEAMLESS_REVISION by default. This is critical for production for seamless deploymen and not lose traffic
-  grunt.registerTask('default', [ /*'importKVMs',*/'DEPLOY_IMPORT_BUMP_SEAMLESS_REVISION' ]);
+  grunt.registerTask('default', [ /*'importKVMs',*/'UPDATE_CURRENT_REVISION' ]);
 
 	grunt.loadTasks('grunt/tasks');
 	if(grunt.option.flags().indexOf('--help') === -1 && !grunt.option('env')) {
