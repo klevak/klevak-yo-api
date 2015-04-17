@@ -1,6 +1,6 @@
 function testFunction(){
 	'use strict';
-	var test = "VALUE TO BE REPLACED #1";
+	var test = "VALUE TO BE REPLACED #3";
 	return test;
 }
 //remove comment to see jshint triggering errors
